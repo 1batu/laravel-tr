@@ -1,8 +1,14 @@
 {
     "name": "herkod/laravel-tr",
-    "description": "Laravel İçin Türkçe Çeviri Dosyaları",
-    "keywords": ["laravel", "languages", "lang", "localization", "translation","turkish", "türkçe"],
+    "description": "Laravel 6-12 için Türkçe çeviri dosyaları - Tam kapsamlı yerelleştirme paketi",
+    "keywords": ["laravel", "languages", "lang", "localization", "translation", "turkish", "türkçe", "i18n", "l10n"],
     "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/herkod/laravel-tr",
+    "support": {
+        "issues": "https://github.com/herkod/laravel-tr/issues",
+        "source": "https://github.com/herkod/laravel-tr"
+    },
     "authors": [
         {
             "name": "Herkod",
@@ -10,7 +16,8 @@
         }
     ],
     "require": {
-        "illuminate/support": "^6.0||^7.0||^8.0||^9.0"
+        "illuminate/support": "^6.0||^7.0||^8.0||^9.0||^10.0||^11.0||^12.0",
+        "php": "^7.4||^8.0||^8.1||^8.2||^8.3"
     },
     "autoload": {
         "psr-4": {
@@ -25,5 +32,15 @@
                 "Herkod\\AppServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "suggest": {
+        "laravel/framework": "Laravel framework for using this package"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
